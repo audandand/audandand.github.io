@@ -1,0 +1,186 @@
+/* General reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* Custom screen CSS */
+
+@media screen, projection {
+
+    div.print {
+        display: none;
+    }
+
+    html {
+        font-family: 'Roboto Condensed', Verdana, Arial, sans-serif;
+        background-color: rgba(66, 172, 211, 0.15);
+        line-height: 1.2em;
+    }
+
+    html.narrow-screen {
+        font-size: 1em;
+    }
+
+    html.wide-screen {
+        font-size: 1.2em;
+    }
+
+    html, a {
+        color: rgb(191, 146, 48);
+        text-decoration: none;
+    }
+
+    p span {
+        color: rgb(66, 172, 211);
+    }
+
+    div.desktop-browser div.full-width {
+        width: 54.4em;
+        max-width: 54.4em;
+        clear: both;
+    }
+
+    div.mobile-browser div.full-width {
+        width: 17.3em;
+        max-width: 17.3em;
+        clear: both;
+    }
+
+    div#page-container {
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    div.left {
+        float: left;
+    }
+
+    div.right {
+        float: right;
+    }
+
+    div.postcard {
+        border: 0.15em solid rgb(66, 172, 211);
+        background-color: white;
+    }
+
+    .large-postcard {
+        width: 35.91em;
+        height: 25.75em;
+    }
+
+    div.icon-panel {
+        width: 17.3em;
+    }
+
+    div.small-postcard-panel {
+        padding-bottom: 1em;
+    }
+
+    .small-postcard {
+        width: 7.98em;
+        height: 5.72em;
+    }
+
+    div.please-help-row {
+        height: 1.717em;
+        position: relative;
+    }
+
+    div.please-help-cell {
+        padding-top: 1em;
+        position: absolute;
+        top: 0;
+    }
+
+    div.please-help-cell-logo {
+        height: 1.717em;
+        padding-top: 1.5em;
+    }
+
+    div.wedpics-site-logo {
+        width: 4.926em;
+    }
+
+    div.apple-app-store-logo {
+        width: 5.724em;
+    }
+
+    div.google-app-store-logo {
+        width: 5.076em;
+    }
+
+    div.please-help-row div.apple-app-store-logo {
+        left: 5.926em;
+    }
+
+    div.please-help-row div.google-app-store-logo {
+        left: 12.5em;
+    }
+
+    div.please-help-row div.please-help-message {
+        left: 18.576em;
+    }
+
+    div.icon-table-row {
+        clear: both;
+        margin-bottom: 1em;
+    }
+
+    div.icon-table-row, div.icon-table-cell {
+        height: 2em;
+    }
+
+    div.icon-table-cell-left {
+        float: left;
+        width: 2em;
+    }
+
+    div.icon-table-cell-right {
+        float: right;
+        width: 14.3em;
+    }
+
+    div.icon-table-cell-right p {
+        margin-top: 0.5em;
+    }
+
+    div#icon-panel-mobile, div#appstore-panel-mobile {
+        margin-top: 1em;
+    }
+
+    div.icon-panel path {
+        fill: rgb(66, 172, 211);
+    }
+}
+
+/* Custom print CSS */
+
+@media print {
+
+    div.do-not-print {
+        display: none;
+    }
+
+    div.small-postcard-panel {
+        margin-top: 10mm;
+        margin-left: 10mm;
+    }
+
+    div.small-postcard-panel:not(:last-child) {
+        page-break-after: always;
+    }
+
+    .postcard {
+        width: 152mm;
+        height: 109mm;
+    }
+
+    div.postcard {
+        border: 1mm solid rgb(66, 172, 211);
+    }
+}
